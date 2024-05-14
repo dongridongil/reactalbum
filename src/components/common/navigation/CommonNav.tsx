@@ -15,8 +15,8 @@ interface Navigation {
 function CommonNav() {
     const location = useLocation();
     const [navigation, setNavigation] = useState<Navigation[]>(navJson);
-    const [page, setPage] = useRecoilState(pageState);
-    const [search, setSearch] = useRecoilState(searchState);
+    const [, setPage] = useRecoilState(pageState);
+    const [, setSearch] = useRecoilState(searchState);
     // useState 로 선언한 반응성을 가진 데이터를 기반으로 UI  반복호출 한다.
 
     useEffect(() => {

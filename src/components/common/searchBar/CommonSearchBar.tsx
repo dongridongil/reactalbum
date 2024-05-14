@@ -5,9 +5,9 @@ import styles from './CommonSearchBar.module.scss';
 import { pageState } from '@/recoil/atoms/pageState';
 
 export default function CommonSearchBar() {
-    const [search, setSearch] = useRecoilState(searchState);
+    const [, setSearch] = useRecoilState(searchState);
     const [text, setText] = useState('');
-    const [page, setPage] = useRecoilState(pageState);
+    const [, setPage] = useRecoilState(pageState);
     const onChange = (event: any) => {
         setText(event.target.value);
     };
