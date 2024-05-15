@@ -50,7 +50,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
+                    margin-left: 10px;
                     border: none;
                     outline: none;
                     background: transparent;
@@ -121,7 +121,7 @@
             .infoBox {
                 display: flex;
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: center;
 
                 width: 100%;
                 gap: 48px;
@@ -145,7 +145,7 @@
             .tagBox {
                 display: flex;
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: center;
 
                 width: 100%;
                 gap: 8px;
@@ -153,8 +153,8 @@
                 &__tag {
                     padding: 4px 8px 6px 8px;
                     border-radius: 4px;
-                    background-color: $color-gray-100;
-                    color: $color-gray-600;
+                    background-color: $color-success-700;
+                    color: $color-white-000;
                 }
             }
         }

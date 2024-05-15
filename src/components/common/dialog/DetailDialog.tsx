@@ -61,13 +61,6 @@ function DetailDialog({ data, handleDialog }: Props) {
             <div className={styles.container__dialog}>
                 <div className={styles.container__dialog__header}>
                     <div className={styles.close}>
-                        <button className={styles.close__button} onClick={closeDialog}>
-                            {/* 구글 아이콘을 사용 */}
-                            <span className="material-symbols-outlined" style={{ fontSize: 28 + 'px' }}>
-                                close
-                            </span>
-                        </button>
-
                         <img
                             className={styles.close__authorImage}
                             alt="사진작가 프로필 사진"
@@ -92,6 +85,13 @@ function DetailDialog({ data, handleDialog }: Props) {
                             )}
                         </button>
                         <button className={styles.bookmark__button}> 다운로드 </button>
+
+                        <button className={styles.close__button} onClick={closeDialog}>
+                            {/* 구글 아이콘을 사용 */}
+                            <span className="material-symbols-outlined" style={{ fontSize: 28 + 'px' }}>
+                                close
+                            </span>
+                        </button>
                     </div>
                 </div>
                 <div className={styles.container__dialog__body}>

@@ -54,7 +54,7 @@ export default function CommonFooter() {
         <footer className={styles.footer}>
             <div className={styles.pagination}>
                 <button className={styles.pagination__button} onClick={moveToPrev}>
-                    <img src="/src/assets/icons/icon-arrowLeft.svg" />
+                    <img src="/reactalbum/icons/icon-arrowLeft.svg" />
                 </button>
                 {/* 변경될 UI 부분  */}
                 {/* <span>1</span>
@@ -93,7 +93,7 @@ export default function CommonFooter() {
                     })}
 
                 <button className={styles.pagination__button} onClick={moveToNext}>
-                    <img src="/src/assets/icons/icon-arrowRight.svg" />
+                    <img src="/reactalbum/icons/icon-arrowRight.svg" />
                 </button>
             </div>
         </footer>

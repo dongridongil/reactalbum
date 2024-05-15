@@ -3,12 +3,18 @@ import styles from './Card.module.scss';
 
 interface Props {
     prop: CardDTO;
+    deleteBookmark: (eventValue: string) => void;
 }
-function Card({ prop }: Props) {
+function Card({ prop, deleteBookmark }: Props) {
     return (
         <div className={styles.card}>
             <div className={styles.card__imageBox}>
                 <img className={styles.card__imageBox__image} src={prop.urls.small} alt="" />
+                <button onClick={() => deleteBookmark(prop.id)} className={styles.close__button}>
+                    <span className="material-symbols-outlined" style={{ fontSize: 24 + 'px' }}>
+                        close
+                    </span>
+                </button>
             </div>
             <div className={styles.card__infoBox}>
                 <div className={styles.card__infoBox__row}>

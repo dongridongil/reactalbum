@@ -57,3 +57,11 @@
         }
     }
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit; /* 클릭한 링크의 색상을 상속하여 유지 */
+}
