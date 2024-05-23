@@ -1,6 +1,6 @@
 # Unsplash Image API 를 활용한 이미지 검색 사이트 만들기
 
-## 개발환경
+# 개발환경
 
 * 프로젝트 환경설정(vite를 활용한 React 프로젝트) 설치 : `npm create vite@latest` <br />
 
@@ -17,11 +17,11 @@
 *  React Toast Pogup 모듈 설치 : `npm install react-simple-toasts` <br />
 
 
-## 웹 화면
+# 웹 화면
 
-#### 메인 페이지
+## 메인 페이지
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/a2f3a5bd-23e6-46ea-bc57-fb1db985bd5c)
 
 
-#### 북마크 페이지
+## 북마크 페이지
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/56ea5b21-e28f-4243-9bb1-29f00d370986)
