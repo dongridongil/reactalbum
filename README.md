@@ -18,7 +18,10 @@
 
 
 ## 웹 화면
+
+#### 메인 페이지
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/a2f3a5bd-23e6-46ea-bc57-fb1db985bd5c)
 
-<br />
+
+#### 북마크 페이지
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/56ea5b21-e28f-4243-9bb1-29f00d370986)
