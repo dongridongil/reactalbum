@@ -1,6 +1,6 @@
-## Unsplash Image API 를 활용한 이미지 검색 사이트 만들기
+# Unsplash Image API 를 활용한 이미지 검색 사이트 만들기
 
-### 개발환경
+## 개발환경
 
 * 프로젝트 환경설정(vite를 활용한 React 프로젝트) 설치 : `npm create vite@latest` <br />
 
