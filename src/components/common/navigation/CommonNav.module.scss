@@ -35,3 +35,21 @@
         }
     }
 }
+@media (max-width: 440px) {
+    .navigation__menu {
+        position: relative;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 14px;
+        opacity: 0.8;
+        &.inactive {
+            color: $color-white-000;
+        }
+        &.active {
+            color: $color-white-400;
+            box-shadow: inset;
+        }
+    }
+}

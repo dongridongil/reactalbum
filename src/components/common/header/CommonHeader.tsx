@@ -21,7 +21,7 @@ export default function CommonHeader() {
                     북마크
                 </button>
                 <span className={styles.header__profileBox__userName}>
-                    Dongil |{' '}
+                    Dongil |{'  '}
                     <a href="https://velog.io/@ehddlfwkd" target="blank">
                         velog.io/@ehddlfwkd
                     </a>

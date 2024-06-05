@@ -9,7 +9,6 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/reactalbum/" element={<MainPage />}></Route>
-
                     <Route path="/search/:id" element={<MainPage />}></Route>
                     <Route path="/bookmark" element={<BookmarkPage />}></Route>
                 </Routes>

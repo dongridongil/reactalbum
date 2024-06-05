@@ -37,6 +37,7 @@ $NAVIGATION-HEIGHT: 50px;
                 flex-direction: column;
 
                 &__title {
+                    position: relative;
                     margin-bottom: 4px;
 
                     color: $color-white-000; // CSS COLOR CODE 변수화 작업 설명 예정
@@ -64,5 +65,21 @@ $NAVIGATION-HEIGHT: 50px;
 
             overflow-y: scroll;
         }
+    }
+}
+
+@media (max-width: 440px) {
+    .page__contents__introBox .wrapper__title {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .page__contents__introBox {
+        width: 100vh;
+        height: 100vh;
+    }
+    .page__contents__imageBox {
+        display: grid;
+        width: 40vh;
+        height: 40vh;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

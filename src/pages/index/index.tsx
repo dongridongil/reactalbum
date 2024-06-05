@@ -30,6 +30,7 @@ export default function index() {
             const result = imgSelector.contents.results.map((card: CardDTO) => {
                 return <Card handleSetData={setImageData} handleDialog={setOpen} data={card} key={card.id} />;
             });
+            console.log(imgSelector.contents.results, '리절뜨');
             return result;
         } else {
             return <Loading />;
