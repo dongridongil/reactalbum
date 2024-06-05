@@ -35,7 +35,7 @@
         }
     }
 }
-@media (max-width: 440px) {
+@media (max-width: 500px) {
     .navigation__menu {
         position: relative;
         margin-top: 100px;
@@ -43,13 +43,13 @@
         flex-direction: row;
         align-items: flex-start;
         font-size: 14px;
-        opacity: 0.8;
+        opacity: 0.7;
         &.inactive {
             color: $color-white-000;
         }
         &.active {
-            color: $color-white-400;
-            box-shadow: inset;
+            color: $color-white-000;
+            opacity: 1;
         }
     }
 }

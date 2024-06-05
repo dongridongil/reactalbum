@@ -61,11 +61,14 @@
                     border-radius: 50%;
                 }
                 &__authorName {
+                    font-size: 14px;
                     font-weight: 600;
                 }
             }
             .bookmark {
                 display: flex;
+                margin-left: auto;
+                margin-right: 10px;
                 align-items: center;
                 justify-content: center;
 
@@ -158,5 +161,45 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .container__dialog {
+        width: 45vh;
+        height: 80vh;
+    }
+
+    .container__dialog__header .bookmark {
+        font-size: 10px;
+
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    .container__dialog__header .bookmark__button {
+        padding: -10px 0;
+        font-size: 10px;
+    }
+    .container__dialog__body .image {
+        height: 75%;
+        width: 80%;
+    }
+
+    .container__dialog__footer .tagBox {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .container__dialog__footer .infoBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .container__dialog__footer .infoBox__item {
+        font-size: 12px;
+        text-align: center;
     }
 }

@@ -66,8 +66,7 @@ a:visited {
     color: inherit; /* 클릭한 링크의 색상을 상속하여 유지 */
 }
 
-/* 320px 이하 화면에서 logoBox 자식 요소를 세로로 배치 */
-@media (max-width: 440px) {
+@media (max-width: 500px) {
     .header {
         display: flex;
         align-items: center;
