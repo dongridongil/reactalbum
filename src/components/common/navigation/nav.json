@@ -37,7 +37,7 @@
     {
         "index": 6,
         "path": "/search/texture",
-        "label": "텍스쳐 및 패턴",
+        "label": "텍스쳐",
         "searchValue": "texture",
         "isActive": false
     },

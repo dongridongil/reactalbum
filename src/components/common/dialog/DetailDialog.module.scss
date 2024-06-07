@@ -175,12 +175,17 @@
 
         display: flex;
         flex-direction: column;
+
+        align-items: flex-start;
         margin-left: auto;
     }
 
     .container__dialog__header .bookmark__button {
-        padding: -10px 0;
         font-size: 10px;
+        margin-bottom: -5px;
+    }
+    .container__dialog__header .bookmark__button:last-child {
+        margin-bottom: 0;
     }
     .container__dialog__body .image {
         height: 75%;

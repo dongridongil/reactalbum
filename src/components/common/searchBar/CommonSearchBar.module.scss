@@ -47,7 +47,12 @@
 }
 
 @media (max-width: 500px) {
+    .searchBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .searchBar__search {
-        width: 100%;
+        width: 80%;
     }
 }

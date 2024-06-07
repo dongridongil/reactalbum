@@ -80,8 +80,11 @@ $NAVIGATION-HEIGHT: 50px;
     }
     .page__contents__introBox .wrapper__title {
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
     }
-
+    .page__contents__introBox .wrapper__desc {
+        text-align: center;
+    }
     .page__contents__imageBox {
         display: grid;
         width: 40vh;

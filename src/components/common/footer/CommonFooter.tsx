@@ -21,10 +21,13 @@ export default function CommonFooter() {
     for (let i = 1; i <= imgSelector.contents.total_pages; i++) {
         newArr.push(i);
     }
+    // console.log(imgSelector.contents.total_pages, 'newArr');
+
     const length = newArr.length;
     const divide = Math.floor(length / 10) + (Math.floor(length % 10) > 0 ? 1 : 0);
-    const res = [];
 
+    const res = [];
+    console.log(divide, 'divide');
     for (let i = 0; i <= divide; i++) {
         // 배열 0부터 n개씩 잘라 새 배열에 넣기
         res.push(newArr.splice(0, 10));
