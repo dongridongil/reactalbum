@@ -3,12 +3,19 @@ import styles from './CommonHeader.module.scss';
 
 export default function CommonHeader() {
     const navigate = useNavigate();
+    const token = localStorage.getItem('token');
+
     //북마크 페이지로 이동
     const moveToPage = (filter: string) => {
         if (filter === 'main') navigate('/reactalbum/');
-        if (filter === 'bookmark') navigate('/bookmark');
+        if (filter === 'bookmark') navigate('/reactalbum/bookmark');
+        if (filter === 'login') navigate('/reactalbum/login');
     };
 
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        window.location.href = '/reactalbum/';
+    };
     return (
         <header className={styles.header}>
             <div className={styles.header__logoBox} onClick={() => moveToPage('main')}>
@@ -16,7 +23,16 @@ export default function CommonHeader() {
                 <span className={styles.header__logoBox__title}>PhotoSplash</span>
             </div>
             <div className={styles.header__profileBox}>
-                <button className={styles.header__profileBox__button}>로그인</button>
+                {token ? (
+                    <button onClick={handleLogout} className={styles.header__profileBox__login}>
+                        로그아웃
+                    </button>
+                ) : (
+                    <button onClick={() => moveToPage('login')} className={styles.header__profileBox__login}>
+                        로그인
+                    </button>
+                )}
+
                 <button onClick={() => moveToPage('bookmark')} className={styles.header__profileBox__button}>
                     북마크
                 </button>

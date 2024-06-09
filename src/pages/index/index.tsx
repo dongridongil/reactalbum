@@ -23,23 +23,14 @@ import { serverDataSelector } from '@/recoil/selectors/serverData';
 // }
 
 export default function index() {
-    // const imgSelector = useRecoilValue(imageData); //api 호출후 데이터추출
     const imgSelector = useRecoilValueLoadable(imageData);
     const [imgData, setImageData] = useState<CardDTO>();
     const [open, setOpen] = useState<boolean>(false); // 이미지 상세 다이얼로그 관리 state
-    const serverDatas = useRecoilValueLoadable(serverDataSelector);
-    // const [serverData, setServerData] = useState<ServerResponse | null>(null);
 
     // const CARD_LIST = imgSelector.data.results.map((card: CardDTO) => {
     //     return <Card handleSetData={setImageData} handleDialog={setOpen} data={card} key={card.id} />;
     // }); //반복적인 호출 때문에 사이트가 느려질수있기에 useMemo 함수사용
 
-    const serverDatadd = useMemo(() => {
-        const sex = serverDatas.contents;
-        return sex;
-    }, [serverDatas]);
-
-    console.log(serverDatadd, '개씨팔롬들ss');
     const CARD_LIST = useMemo(() => {
         // imgSelector.state = hasValue or loading
         if (imgSelector.state === 'hasValue') {
