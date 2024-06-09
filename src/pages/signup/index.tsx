@@ -49,6 +49,7 @@ function index() {
     return (
         <div className={styles.page}>
             <div className={styles.page__image}>
+                <img src="/reactalbum/images/flower9.jpg" className={styles.page__image__img} />
                 <div className={styles.page__image__overlay}>
                     <div className={styles.page__image__overlay__img}>
                         <a href="/">P</a>{' '}

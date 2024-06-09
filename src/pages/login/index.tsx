@@ -46,7 +46,7 @@ function index() {
                 if (error.response && error.response.data) {
                     setErrormessage(error.response.data.message);
                 } else {
-                    setErrormessage('재시도 해주십시오');
+                    setErrormessage('서버 연결에 문제가 있습니다.');
                 }
             });
     };
