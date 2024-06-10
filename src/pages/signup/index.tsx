@@ -28,7 +28,7 @@ function index() {
     const loginSubmit = () => {
         setErrorMessage(''); // 초기화
         axios
-            .post('http://localhost:8080/reactalbum/signup', {
+            .post('http://localhost:3000/reactalbum/signup', {
                 username,
                 userid,
                 password,
@@ -46,13 +46,18 @@ function index() {
             });
     };
 
+    const moveToPage = (filter: string) => {
+        if (filter === 'home') navigate('/reactalbum');
+        if (filter === 'login') navigate('/reactalbum/login');
+    };
+
     return (
         <div className={styles.page}>
             <div className={styles.page__image}>
                 <img src="/reactalbum/images/flower9.jpg" className={styles.page__image__img} />
                 <div className={styles.page__image__overlay}>
                     <div className={styles.page__image__overlay__img}>
-                        <a href="/">P</a>{' '}
+                        <a onClick={() => moveToPage('home')}>P</a>{' '}
                     </div>
 
                     <h2 className={styles.page__image__overlay__h2}>여기에서 창작 시작하기</h2>
@@ -65,7 +70,7 @@ function index() {
                 <div className={styles.page__signup__box}>
                     <h2>PhotoSplash 가입</h2>
                     <h4>
-                        이미 계정이 있으세요? <a href="/reactalbum/login">로그인</a>
+                        이미 계정이 있으세요? <a onClick={() => moveToPage('login')}>로그인</a>
                     </h4>
                     <h3>사용자 이름</h3>
                     <input type="text" id="username" value={username} onChange={handleUsername} />

@@ -12,7 +12,11 @@ interface Navigation {
     searchValue: string;
     isActive: boolean;
 }
-function CommonNav() {
+interface CommonNavProps {
+    className?: string;
+}
+
+function CommonNav({ className }: CommonNavProps) {
     const location = useLocation();
     const [navigation, setNavigation] = useState<Navigation[]>(navJson);
     const [, setPage] = useRecoilState(pageState);
@@ -48,7 +52,7 @@ function CommonNav() {
         );
     });
 
-    return <nav className={styles.navigation}>{navLinks}</nav>;
+    return <nav className={`${styles.navigation} ${className}`}>{navLinks}</nav>;
 }
 
 export default CommonNav;

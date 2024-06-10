@@ -1,5 +1,5 @@
 {
-    "homepage": "https://dongridongil.github.io/reactalbum",
+    "homepage": "https://dongridongil.github.io/reactalbum/",
     "name": "react-album",
     "private": true,
     "version": "0.0.0",
@@ -15,6 +15,7 @@
     "dependencies": {
         "@types/node": "^20.12.12",
         "axios": "^1.6.8",
+        "http-proxy-middleware": "^3.0.0",
         "localforage": "^1.10.0",
         "match-sorter": "^6.3.4",
         "react": "^18.2.0",

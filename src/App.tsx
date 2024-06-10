@@ -28,6 +28,7 @@ function App() {
                 <Routes>
                     <Route path="/reactalbum/" element={<MainPage />}></Route>
                     <Route path="/reactalbum/search/:id" element={<MainPage />}></Route>
+                    <Route path="/reactalbum/signup" element={<SignupPage />}></Route>
                     <Route path="/reactalbum/login" element={<LoginPage />}></Route>
                     <Route
                         path="/reactalbum/bookmark"
@@ -38,7 +39,7 @@ function App() {
                             </PrivateRoute>
                         }
                     ></Route>
-                    <Route path="/reactalbum/signup" element={<SignupPage />}></Route>
+
                     <Route
                         path="/reactalbum/protect"
                         element={

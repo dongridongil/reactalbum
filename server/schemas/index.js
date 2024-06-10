@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config(); // dotenv 패키지 로드
 
-const dbUrl = process.env.MONGOOSE_URL;
+
+const mongoURI = process.env.MONGO_URI;
 
 // 몽구스 연결 함수
 const connect = async () => {
@@ -11,7 +12,7 @@ const connect = async () => {
             mongoose.set('debug', true); // 몽고 쿼리가 콘솔에서 뜨게 한다.
         }
 
-        await mongoose.connect(dbUrl, {
+        await mongoose.connect(mongoURI, {
             dbName: 'photosplash' // 실제로 데이터 저장할 db명
         });
 

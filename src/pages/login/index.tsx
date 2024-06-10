@@ -26,15 +26,11 @@ function index() {
     const handleLogin = async () => {
         axios
             .post(
-                'http://localhost:8080/reactalbum/login',
+                // 'https://photosplash.fly.dev/reactalbum/login',
+                'http://localhost:3000/reactalbum/login',
                 {
                     userid,
                     password,
-                },
-                {
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
                 }
             )
             .then((response) => {
@@ -56,10 +52,15 @@ function index() {
             handleLogin();
         }
     };
+
+    const moveToPage = (filter: string) => {
+        if (filter === 'signup') navigate('/reactalbum/signup');
+    };
+
     return (
         <div className={styles.page}>
             <CommonHeader />
-            <CommonNav />
+            <CommonNav className={styles.page__nav} />
             <div className={styles.page__loginBox}>
                 <h1 className={styles.page__loginBox__h1}>로그인</h1>
                 <h2 className={styles.page__loginBox__h2}>재방문을 환영합니다.</h2>
@@ -104,7 +105,7 @@ function index() {
             <div className={styles.page__signBox}>
                 <h3 className={styles.page__signBox__h3}>
                     계정이 없으세요?{' '}
-                    <a className={styles.page__signBox__a} href="/reactalbum/signup">
+                    <a className={styles.page__signBox__a} onClick={() => moveToPage('signup')}>
                         가입
                     </a>
                 </h3>
