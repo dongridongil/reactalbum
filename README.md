@@ -2,6 +2,7 @@
 
 # 개발환경
 
+## 프론트 (React)
 * 프로젝트 환경설정(vite를 활용한 React 프로젝트) 설치 : `npm create vite@latest` <br />
 
 *  React 중앙집중식 상태 관리 라이브러리 Recoil 설치 : `npm install recoil` <br />
@@ -16,8 +17,20 @@
 
 *  React Toast Pogup 모듈 설치 : `npm install react-simple-toasts` <br />
 
+## 백엔드 (Node.js)
 
-# 웹 화면
+* 간단한 웹 서버 구축을 위한 Express 설치 : npm install express <br />
+
+* JSON Web Token을 생성하고 검증하기 위한 jsonwebtoken 설치 : npm install jsonwebtoken <br />
+
+* 비밀번호 해싱 및 비교를 위한 bcryptjs 설치 : npm install bcryptjs <br />
+
+* 백엔드서버와 프론트서버의 원활한 통신을 위한 cors 설치 : npm install cors <br />
+
+* 환경 변수를 로드하기 위해 dotenv 설치 : npm install dotenv <br />
+
+* MongoDB와의 데이터 상호작용을 위해 mongoose 설치 : npm install mongoose <br />
+
 
 ## 메인 페이지
 
@@ -34,4 +47,9 @@
 ## 로그인 페이지
 
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/cc3ea740-4e7f-4539-afb0-32915778f112)
+
+## 몽고 db 사용
+
+![image](https://github.com/dongridongil/reactalbum/assets/108976641/4e083bc8-a63b-41b0-9aa7-b1d72b750f6e)
+
 
