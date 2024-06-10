@@ -48,7 +48,7 @@
 
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/cc3ea740-4e7f-4539-afb0-32915778f112)
 
-## 몽고 db 사용
+## 몽고 DB 페이지
 
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/4e083bc8-a63b-41b0-9aa7-b1d72b750f6e)
 
