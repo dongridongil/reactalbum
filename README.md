@@ -20,8 +20,14 @@
 # 웹 화면
 
 ## 메인 페이지
-![image](https://github.com/dongridongil/reactalbum/assets/108976641/a2f3a5bd-23e6-46ea-bc57-fb1db985bd5c)
-
+<img src ="https://github.com/dongridongil/reactalbum/assets/108976641/a2f3a5bd-23e6-46ea-bc57-fb1db985bd5c" width:"1000"; height:"1000" />
 
 ## 북마크 페이지
 ![image](https://github.com/dongridongil/reactalbum/assets/108976641/56ea5b21-e28f-4243-9bb1-29f00d370986)
+
+## 회원가입 페이지
+![image](https://github.com/dongridongil/reactalbum/assets/108976641/c9f6f7d5-155e-4eea-85cd-d2ccd84501dd)
+
+## 로그인 페이지
+![image](https://github.com/dongridongil/reactalbum/assets/108976641/cc3ea740-4e7f-4539-afb0-32915778f112)
+
