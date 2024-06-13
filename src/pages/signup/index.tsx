@@ -28,7 +28,7 @@ function index() {
     const loginSubmit = () => {
         setErrorMessage(''); // 초기화
         axios
-            .post('http://localhost:3000/reactalbum/signup', {
+            .post('http://localhost:8080/reactalbum/signup', {
                 username,
                 userid,
                 password,
