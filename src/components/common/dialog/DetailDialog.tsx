@@ -1,10 +1,11 @@
-import { CardDTO, Tag } from '@/pages/index/types/card';
+import { CardDTO } from '@/pages/index/types/card';
 import styles from './DetailDialog.module.scss';
 import { useEffect, useState } from 'react';
 import toast, { toastConfig } from 'react-simple-toasts';
 import 'react-simple-toasts/dist/theme/dark.css';
 
 toastConfig({ theme: 'dark' });
+
 interface Props {
     data: CardDTO;
     handleDialog: (eventValue: boolean) => void;
@@ -12,7 +13,7 @@ interface Props {
 
 function DetailDialog({ data, handleDialog }: Props) {
     const [bookmark, setBookmark] = useState(false);
-
+    console.log(data, 'data');
     //다이얼로그 끄기
     const closeDialog = () => {
         handleDialog(false);
@@ -119,13 +120,9 @@ function DetailDialog({ data, handleDialog }: Props) {
                         </div>
                     </div>
                     <div className={styles.tagBox}>
-                        {data.tags.map((tag: Tag) => {
-                            return (
-                                <div key={tag.title} className={styles.tagBox__tag}>
-                                    {tag.title}
-                                </div>
-                            );
-                        })}
+                        <div key={data.alt_description} className={styles.tagBox__tag}>
+                            {data.alt_description}
+                        </div>
                     </div>
                 </div>
             </div>

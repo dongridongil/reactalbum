@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useRecoilValueLoadable } from 'recoil';
 import { imageData } from '@/recoil/selectors/imageSelectors';
 
@@ -13,7 +13,6 @@ import Loading from './components/Loading';
 import styles from './styles/index.module.scss';
 
 import { CardDTO } from './types/card';
-import { serverDataSelector } from '@/recoil/selectors/serverData';
 
 // interface ServerResponse {
 //     contents: {

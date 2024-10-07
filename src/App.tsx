@@ -5,7 +5,6 @@ import MainPage from '@pages/index/index';
 import BookmarkPage from '@pages/bookmark/index';
 import LoginPage from '@pages/login/index';
 import SignupPage from '@pages/signup/index';
-import Protect from './pages/protect/protect';
 import { useEffect } from 'react';
 
 const PrivateRoute = ({ children }) => {
@@ -39,15 +38,6 @@ function App() {
                             </PrivateRoute>
                         }
                     ></Route>
-
-                    <Route
-                        path="/reactalbum/protect"
-                        element={
-                            <PrivateRoute>
-                                <Protect />
-                            </PrivateRoute>
-                        }
-                    />
                 </Routes>
             </BrowserRouter>
         </RecoilRoot>
